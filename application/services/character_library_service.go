@@ -322,7 +322,7 @@ func (s *CharacterLibraryService) GenerateCharacterImage(characterID string, ima
 		return nil, err
 	}
 
-	// 构建生成提示词 - 使用详细的外貌描述，添加干净背景要求
+	// 构建生成提示词 - 角色三视图参考设定
 	prompt := ""
 
 	// 优先使用appearance字段，它包含了最详细的外貌描述
@@ -333,6 +333,10 @@ func (s *CharacterLibraryService) GenerateCharacterImage(characterID string, ima
 	} else {
 		prompt = character.Name
 	}
+
+	// 添加三视图指令
+	threeViewPrompt := s.promptI18n.GetCharacterThreeViewPrompt()
+	prompt = threeViewPrompt + "\n\n" + prompt
 
 	// 使用已经加载的 drama 的 style 信息
 	if drama.Style != "" && drama.Style != "realistic" {

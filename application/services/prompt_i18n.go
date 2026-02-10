@@ -672,6 +672,39 @@ func (p *PromptI18n) FormatUserPrompt(key string, args ...interface{}) string {
 	return template
 }
 
+// GetCharacterThreeViewPrompt 获取角色三视图生成提示词
+func (p *PromptI18n) GetCharacterThreeViewPrompt() string {
+	if p.IsEnglish() {
+		return `**[Character Three-View Reference Sheet]**
+Generate a single image containing three views of the same character arranged side by side on a clean white/light gray background:
+
+1. **Left - Front View**: Full-body front-facing pose, arms slightly away from the body, neutral expression, clearly showing facial features, clothing details, and accessories.
+2. **Center - Side View (3/4 or Profile)**: Full-body side-facing pose from the same character, showing the silhouette, hairstyle depth, clothing layering, and side profile of the face.
+3. **Right - Back View**: Full-body rear-facing pose, showing the back of the hairstyle, clothing back details, and any rear accessories or weapons.
+
+**Critical Requirements:**
+- All three views must depict the EXACT SAME character with perfectly consistent appearance (face, hair, clothing, colors, proportions)
+- Clean, minimal background (white or light gray) with no environmental elements
+- Professional character design sheet layout with clear separation between views
+- Full body visible in all three views, from head to feet
+- Consistent lighting across all three views`
+	}
+
+	return `**[角色三视图参考设定]**
+生成一张包含同一角色三个视角的完整设定图，三个视角并排排列在干净的白色/浅灰色背景上：
+
+1. **左侧 - 正面视图**：全身正面站姿，双臂微微离开身体，表情自然，清晰展示面部特征、服装细节和配饰。
+2. **中间 - 侧面视图（3/4侧或全侧面）**：同一角色的全身侧面站姿，展示轮廓线条、发型层次、服装层叠效果和面部侧面轮廓。
+3. **右侧 - 背面视图**：全身背面站姿，展示发型背面、服装背部细节以及背部的配饰或武器。
+
+**关键要求：**
+- 三个视角必须是完全相同的角色，外观高度一致（面部、发型、服装、配色、比例）
+- 干净简洁的背景（白色或浅灰色），不包含任何环境元素
+- 专业角色设定图排版，各视角之间有清晰间隔
+- 三个视角均为全身可见，从头到脚
+- 三个视角的光照保持一致`
+}
+
 // GetStylePrompt 获取风格提示词
 func (p *PromptI18n) GetStylePrompt(style string) string {
 	if style == "" {
