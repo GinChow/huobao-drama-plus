@@ -323,10 +323,13 @@
                     @change="toggleCharacterSelection(character.id)"
                   />
                   <div class="character-preview">
-                    <img
+                    <el-image
                       v-if="hasImage(character)"
                       :src="getImageUrl(character)"
                       :alt="character.name"
+                      fit="cover"
+                      :preview-src-list="[getImageUrl(character)]"
+                      preview-teleported
                     />
                     <el-avatar v-else :size="120">{{
                       character.name[0]
@@ -1911,10 +1914,16 @@ onMounted(() => {
   pointer-events: none;
 }
 
-.character-preview img {
+.character-preview :deep(.el-image) {
+  width: 100%;
+  height: 100%;
+}
+
+.character-preview :deep(.el-image img) {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .character-info {

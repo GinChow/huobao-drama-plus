@@ -239,7 +239,7 @@
 
                     <div class="card-image-container">
                       <div v-if="hasImage(char)" class="char-image">
-                        <el-image :src="getImageUrl(char)" fit="cover" />
+                        <el-image :src="getImageUrl(char)" fit="cover" :preview-src-list="[getImageUrl(char)]" preview-teleported />
                       </div>
                       <div
                         v-else-if="
@@ -424,7 +424,7 @@
 
                     <div class="card-image-container">
                       <div v-if="hasImage(scene)" class="scene-image">
-                        <el-image :src="getImageUrl(scene)" fit="cover" />
+                        <el-image :src="getImageUrl(scene)" fit="cover" :preview-src-list="[getImageUrl(scene)]" preview-teleported />
                       </div>
                       <div
                         v-else-if="
@@ -2845,6 +2845,7 @@ onMounted(() => {
         width: 100%;
         height: 100%;
         border-radius: 0;
+        cursor: pointer;
       }
     }
 

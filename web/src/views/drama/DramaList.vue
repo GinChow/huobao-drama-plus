@@ -133,6 +133,7 @@
                 value="guoman3d"
               />
               <el-option :label="$t('drama.styles.chibi3d')" value="chibi3d" />
+              <el-option :label="$t('drama.styles.guofengwuxia')" value="guofengwuxia" />
             </el-select>
           </el-form-item>
         </el-form>
