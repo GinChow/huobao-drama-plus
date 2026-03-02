@@ -728,6 +728,15 @@ func (p *PromptI18n) GetStylePrompt(style string) string {
 - **视觉流派与质感**：融合了**新国风数字艺术（Modern Zen Illustration）**与**史诗级奇幻渲染**。画面质感细腻且带有微微的丝滑感，类似高精度的2D数字绘画。强调光影的体积感，画面中包含大量微小的粒子效果和发光氛围。
 - **核心色彩与发光美学**：使用**"撞色与内生光影"**。主色调通常是冷暖色调的剧烈碰撞（如靛青色与金橙色）。画面逻辑的核心在于**"局部发光"**：暗部点缀着发光的荧光元素（如荧光植物、灯火或水晶质感），这种对比营造了强烈的魔法感和神秘感。
 - **装饰性元素逻辑**：强调**"线条的流动感"**。画面中充斥着优美的曲线，这些线条通常由发光带、飘带或自然界的纹理（如流水的走势）组成，增强了整体的装饰性和节奏感。`,
+			"guofengwuxia": ` **[专家角色定位]**
+你是一位顶尖的动漫概念艺术家与画师，擅长将传统的东方武侠神韵通过极致的动漫视觉语言呈现。你是融合了“马荣成式硬核港漫动势”与“新海诚般极致光影空气感”的动漫国风大师，专注于创造具有强烈叙事感的画面。
+
+**[风格核心逻辑]**
+- **视觉流派与质感**：融合了高级赛璐璐风格（Cell Shading）与电影级的动画映画级渲染（Anime Film Rendering）。画面必须保留清晰、锐利且富有动感的线条结构，展现类似高精度动画关键帧（Keyframe）的质感。强调光影对空气感的塑造，画面要充满强烈的呼吸感与叙事深度。
+
+- **核心色彩与发光美学**：使用**“戏剧化动漫配色”。主色调倾向于使用高饱和度的剧烈撞色（如靛青与金橙），并在其中融入动画特有的光晕特效。核心发光逻辑是“超现实的局部发光”**：暗部点缀着呈现荧光特效的超现实元素（如动漫风的发光植被、魔法灯火），通过强烈的冷暖色调碰撞，营造出濃厚的幻想武侠氛围。
+
+- **装饰性元素与动态逻辑**：强调**“动态线条与画面张力”**。画面中充斥着优美的流动曲线，这些线条由动漫风的能量流、飘带或自然元素（如流水的走势）组成。更需融入动漫分镜中特有的动态线条（Dynamic Lines），强化画面的节奏感，让静止的画面展现出强烈的动势。`,
 
 			"wasteland": `**[专家角色定位]**
 你是一位专注于"末世叙事"的视觉艺术家，擅长运用**硬核线条（Hard Line-art）**和**复古平面印刷感**来营造史诗般的荒凉氛围，深受让·吉罗（Moebius）和现代废土科幻插画的影响。
@@ -801,6 +810,16 @@ You are a top-tier digital illustration artist, skilled at merging traditional E
 - **Visual Genre & Texture**: A fusion of **Modern Zen Illustration (New Guofeng)** and epic fantasy rendering. The texture is delicate with a silky feel, similar to high-precision 2D digital painting. It emphasizes volumetric lighting and includes a large amount of tiny particle effects and glowing atmospheres.
 - **Core Color & Luminous Aesthetics**: Employs **"Contrasting Colors & Endogenous Lighting."** The main palette usually features intense collisions of cool and warm tones (e.g., indigo and golden orange). The core logic lies in **"Local Luminescence"**: dark areas are dotted with bioluminescent elements (like fluorescent plants, lanterns, or crystal textures), creating a strong sense of magic and mystery.
 - **Decorative Element Logic**: Emphasizes the **"Flow of Lines."** The frame is filled with elegant curves, often composed of light trails, ribbons, or natural textures (like the flow of water), enhancing the overall decorativeness and rhythm.`,
+
+			"guofengwuxia": `**[Expert Role]**
+You are a top-tier anime concept artist and illustrator, specializing in expressing the traditional Eastern Wuxia (martial arts) spirit through cutting-edge anime visual language. You are a master who fuses "Ma Wing-shing's hardcore Hong Kong manga dynamism" with "Makoto Shinkai's breathtaking atmospheric lighting," focused on creating frames with intense narrative power.
+
+**[Core Style Logic]**
+- **Visual Genre & Texture**: A fusion of advanced **Cel-shading** and cinematic **Anime Film Rendering**. The image must retain clear, sharp, and dynamic line structures, presenting the quality of high-precision animation **keyframes**. Emphasizes how lighting sculpts the sense of atmosphere—the frame must be filled with a strong sense of breath and narrative depth.
+
+- **Core Color & Luminous Aesthetics**: Employs **"Dramatic Anime Color Schemes."** The main palette leans toward high-saturation clashing colors (such as indigo and golden orange), infused with anime-specific halo effects. The core luminous logic is **"Surreal Local Luminescence"**: dark areas are accented with supernatural glowing elements rendered in anime style (such as glowing flora, magical lanterns), creating a rich fantasy Wuxia atmosphere through intense warm-cool color collisions.
+
+- **Decorative Elements & Dynamic Logic**: Emphasizes **"Dynamic Lines & Visual Tension."** The frame is filled with elegant flowing curves composed of anime-style energy streams, ribbons, or natural elements (like the flow of water). It must also incorporate the **Dynamic Lines** unique to anime storyboards, reinforcing the rhythm of the frame and imbuing the still image with a powerful sense of motion.`,
 
 			"wasteland": `**[Expert Role]**
 You are a visual artist focused on "Post-Apocalyptic Narrative," skilled at using **Hard Line-art** and a **retro print feel** to create epic, desolate atmospheres, heavily influenced by Moebius and modern wasteland sci-fi illustrations.

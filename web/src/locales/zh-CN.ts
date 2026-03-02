@@ -162,7 +162,8 @@ export default {
       voxel: '方块世界',
       urban: '都市',
       guoman3d: '国漫3D',
-      chibi3d: 'Q版3D'
+      chibi3d: 'Q版3D',
+      guofengwuxia: '国风武侠'
     },
     deleteConfirm: '确定要删除这个项目吗？',
     noCover: '暂无封面',
